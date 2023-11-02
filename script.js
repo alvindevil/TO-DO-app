@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function ()
     const tasklist = document.getElementById("tasklist");
     const complete_task = document.getElementById("complete-task");
     const delete_task = document.getElementById("delete-task");
+    const buttons = document.getElementById("buttons");
 
     // Event listener to add a new task
     addtaskButton.addEventListener("click", function () 
@@ -13,12 +14,19 @@ document.addEventListener("DOMContentLoaded", function ()
         if (tasktext !== "") 
         {
             const listitem = document.createElement("li");
+            const done = document.createElement("button");
+            const deleteb = document.createElement("button");
             listitem.innerHTML = `
                 <span>${tasktext}</span>
             `;
-            tasklist.appendChild(listitem);
-            const icons = document.getElementById("icons");
-            const controlicons = document.createElement("div");
+            tasklist.appendChild(listitem); 
+            buttons.appendChild(done);  
+            buttons.appendChild(deleteb); 
+            listitem.id = "listitem";
+            done.innerHTML = "Done";
+            done.id = "done-button";
+            deleteb.innerHTML="Delete"; 
+            deleteb.id = "delete-button";
             controlicons.innerHTML = `
             <div class="buttons-group">
                 <button id="complete-task"> <img src="🦆 icon _tick circle_.svg"></button>
@@ -29,11 +37,12 @@ document.addEventListener("DOMContentLoaded", function ()
             taskinput.value = "";
         }
     });
-    complete_task.addEventListener("click", function()
+    done = document.getElementById("done-button");
+    done.addEventListener("click", function()
     {
-        const listitem = document.createElement("li");
-        listitem.style.cssText = "text-decoration: line-though";
-    })
+        listitem = document.getElementById("listitem");
+        listitem.style.display = "none";
+    });
 
     // Event delegation for marking tasks as complete and deleting tasks
     tasklist.addEventListener("click", function (e) {

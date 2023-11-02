@@ -5,7 +5,6 @@
 }
 body
 {
-    background:linear-gradient(rgb(55, 55, 55),rgb(126, 126, 126));
     width: 100%; height: 100vh;
 }
 .container
@@ -18,10 +17,10 @@ body
     width: 520px;
     height: 499px;
     flex-shrink: 0;
-    border-radius: 59px 59px 0px 0px;
+    border-radius: 0px 0px 0px 0px;
     border: 2px solid #AEC9FD;
-    background: rgba(71, 107, 178, 0.15);
-    box-shadow: 0px 0px 19px 3px rgba(0, 0, 0, 0.31) inset, 0px 0px 13px 1px rgba(255, 255, 255, 0.25);
+    background: rgba(71, 107, 178, 0.53);
+    box-shadow: 0px 0px 190px 3px rgba(156, 139, 240, 0.556) inset, 0px 0px 13px 1px rgba(255, 255, 255, 0.25);
     padding-bottom: 10px;
 }
 
@@ -32,9 +31,8 @@ body
     width: 355px;
     height: 424px;
     flex-shrink: 0;
-    border-radius: 58px 59px 0px 0px;
-    background: rgba(71, 107, 178, 0.18);
-    box-shadow: 0px 0px 4px 1px #545FAA inset;
+    background: rgba(71, 107, 178, 0.051);
+    box-shadow: 0px 0px 40px 1px #c0c4e0 inset;
     overflow: hidden;
 }
 .tasklist
@@ -46,7 +44,6 @@ body
     padding: 40px; row-gap: 15px;
     overflow-y: scroll; overflow-x: hidden;
     flex-wrap: nowrap;
-    border-radius: 58px 59px 0px 0px;
     overflow: auto;
 
 }
@@ -61,8 +58,7 @@ body
     padding: 5px;
     font-size: 1.1rem;
     width: 300px;
-    background:linear-gradient(rgba(26, 26, 133, 0.826),rgba(104, 117, 185, 0.799));
-    border-radius: 20px;
+    background: linear-gradient(rgba(97, 97, 212, 0.848),rgba(50, 50, 124, 0.886));
 }
 .icon-box
 {
@@ -99,14 +95,7 @@ body
     border: none;
     cursor: pointer;
 }
-.buttons-group button:nth-child(1):hover
-{
-    
-}
-.buttons-group button:nth-child(2)
-{
 
-}
 .inputbox
 {
     display: flex;
