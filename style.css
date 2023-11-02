@@ -51,14 +51,29 @@ body
 {
     display: none;
 }
+.listbox
+{
+    display: flex;
+    flex-direction: row;
+    column-gap: 3px;
+}
+.listbox button
+{
+    display: block;
+    text-align: center;
+    padding: 5px 10px;
+    border: solid 1px grey;
+}
 .tasklist li
 {
     display: flex;
     justify-content: center;
     padding: 5px;
     font-size: 1.1rem;
-    width: 300px;
+    width: fit-content;
+    height: fit-content;
     background: linear-gradient(rgba(97, 97, 212, 0.848),rgba(50, 50, 124, 0.886));
+    margin-right: 15px;
 }
 .icon-box
 {
@@ -80,20 +95,34 @@ body
     flex-wrap: nowrap;
     border-radius: 58px 59px 0px 0px;
 }
+
 .icons::-webkit-scrollbar
 {
     display: none;
 }
+
+.buttons-group
+{
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+}
+
 .buttons-group 
 {
     display: flex;
     column-gap: 10px;
 }
-.icons .buttons-group button
+
+.buttons{
+    display: flex;
+}
+.buttons button
 {
-    background: none;
-    border: none;
-    cursor: pointer;
+    display: block;
+    text-align: center;
+    padding: 10px 15px;
+    border: solid 1px grey;
 }
 
 .inputbox
