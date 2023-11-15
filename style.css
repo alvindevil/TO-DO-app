@@ -135,7 +135,7 @@ body
     flex-shrink: 0;
     border-radius: 0px 0px 14px 14px;
     border: 0px solid #9BBDFF;
-    background: rgba(43, 64, 107, 0.67);
+    background: rgba(43, 64, 107,0.95);
     box-shadow: 0px 0px 33px 3px #312E6F inset, 0px 4px 4px 0px rgba(255, 255, 255, 0.25);
     padding: 10px;
 }
