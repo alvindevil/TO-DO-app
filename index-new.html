@@ -1,59 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
-  	<meta charset="utf-8">
-  	<meta name="viewport" content="initial-scale=1, width=device-width">
-  	
-  	
-  	<link rel="stylesheet" href="style-new.css" />
-  	<link rel="stylesheet"  href="./index.css" />
-  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" />
-  	
-  	
-  	
-</head>
-<body>
-  	
-  	<div class="add-task1">
-      <div class="task-box">
-          <div class="frame-parent">
-              <div class="task-1-wrapper">
-                  <div class="add">TASK 1</div>
-              </div>
-              <div class="rectangle-parent" id="groupContainer">
-                  <div class="group-child">
-                  </div>
-                  <img class="done-icon" alt="" src="🦆 icon _tick circle_.svg">
-                  
-              </div>
-              <div class="rectangle-parent" id="groupContainer1">
-                  <div class="group-item">
-                  </div>
-                  <img class="trash-can-icon" alt="" src="🦆 icon _trash_.svg">
-                  
-              </div>
+  <head>
+    <link rel="stylesheet" href="style-new.css" />
+  </head>
+  <body>
+    <div class="add">
+      <div class="add-task">
+        <div class="make-task">
+          <div class="input-field"></div>
+          <button class="add-button"><div class="text-wrapper">ADD</div></button>
+        </div>
+        <div class="task-box">
+          <div class="frame">
+            <div class="div-wrapper"><div class="div">TASK 1</div></div>
+            <div class="group"><img class="img" src="img/done.png" /></div>
+            <div class="group"><img class="img" src="img/trash-can.png" /></div>
           </div>
+        </div>
       </div>
-    		<div class="make-task">
-      			<input class="input-field">
-      		
-      			<div class="add-button">
-        				<div class="add" id="add-task">ADD</div>
-      			</div>
-    		</div>
-  	</div>
-  	
-  	
-  	
-  	
-  	<script>
-    		var addtask = document.getElementById("add-task");
-    		if(addtask) {
-      			addtask.addEventListener("click", function (e) {
-        				// Add your code here
-      			});
-    		}
-        </script>
-    
+    </div>
   </body>
 </html>
