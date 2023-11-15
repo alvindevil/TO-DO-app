@@ -1,23 +1,63 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="style-new.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
+    />
   </head>
   <body>
-    <div class="add">
-      <div class="add-task">
-        <div class="make-task">
-          <div class="input-field"></div>
-          <button class="add-button"><div class="text-wrapper">ADD</div></button>
-        </div>
-        <div class="task-box">
-          <div class="frame">
-            <div class="div-wrapper"><div class="div">TASK 1</div></div>
-            <div class="group"><img class="img" src="img/done.png" /></div>
-            <div class="group"><img class="img" src="img/trash-can.png" /></div>
-          </div>
+    <section class="home" id="home">
+      <div class="task-box" id="task-box">
+        <div class="task1" id="Task-panel">
+          <li class="task1-text" id="Task-1">
+            <div class="task-1">TASK 1</div>
+          </li>
+          <button class="done-task" autofocus="{true}" id="done-task">
+            <img class="done-icon" alt="" src="./public/done@2x.png" />
+          </button>
+          <button class="delete-task" autofocus="{true}" id="del-task">
+            <img
+              class="trash-can-icon"
+              alt=""
+              src="./public/trash-can@2x.png"
+            />
+          </button>
         </div>
       </div>
-    </div>
+      <div class="make-task">
+        <input
+          class="input-field"
+          id="input-task"
+          placeholder="Enter Task"
+          type="text"
+        />
+
+        <button class="add-button" autofocus="{true}" id="add-task">
+          <h3 class="add">ADD</h3>
+        </button>
+      </div>
+    </section>
+
+    <script>
+      var doneTask = document.getElementById("done-task");
+      if (doneTask) {
+        doneTask.addEventListener("click", function (e) {
+          // Please sync "Start" to the project
+        });
+      }
+      
+      var deleteTask = document.getElementById("del-task");
+      if (deleteTask) {
+        deleteTask.addEventListener("click", function (e) {
+          // Please sync "Start" to the project
+        });
+      }
+      </script>
   </body>
 </html>
