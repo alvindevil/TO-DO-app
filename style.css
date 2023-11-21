@@ -5,7 +5,11 @@
 }
 body
 {
-    width: 100%; height: 100vh;
+    background:url(./pattern-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%; height: 100%;
 }
 .container
 {
@@ -19,7 +23,8 @@ body
     flex-shrink: 0;
     border-radius: 0px 0px 0px 0px;
     border: 2px solid #AEC9FD;
-    background: rgba(71, 107, 178, 0.53);
+    background: rgba(23, 63, 144, 0.303);
+    backdrop-filter: blur(10px);
     box-shadow: 0px 0px 190px 3px rgba(156, 139, 240, 0.556) inset, 0px 0px 13px 1px rgba(255, 255, 255, 0.25);
     padding-bottom: 10px;
 }
@@ -28,24 +33,22 @@ body
 {
     display: flex;
     justify-content: center; align-items: center;
-    width: 355px;
-    height: 424px;
+    align-self: center;
+    width: 90%;
+    height: 90%;
+    
     flex-shrink: 0;
-    background: rgba(71, 107, 178, 0.051);
-    box-shadow: 0px 0px 40px 1px #c0c4e0 inset;
     overflow: hidden;
 }
 .tasklist
 {
     display: flex;
-    width: 350px; height: 300px;
+    width: 100%; height: 100%;
     flex-direction: column;
-    justify-content: center; align-items: center;
+    justify-content: flex-start; align-items: center;
     padding: 40px; row-gap: 15px;
-    overflow-y: scroll; overflow-x: hidden;
+    overflow-y: scroll; overflow-x: auto;
     flex-wrap: nowrap;
-    overflow: auto;
-
 }
 .tasklist::-webkit-scrollbar
 {
@@ -54,8 +57,35 @@ body
 .listbox
 {
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
     column-gap: 3px;
+    width: 100%;
+}
+.listbox:hover
+{
+    box-shadow: 0px 4px 8px 1px rgb(44, 44, 44);
+}
+.listbox .listitem
+{
+    color: white;
+    max-width: 400px;;
+    overflow: auto;
+}
+.listbox .c_btns
+{
+    display: flex;
+
+}
+.c_btns button
+{
+    background-color: rgba(0, 102, 255, 0.563);
+    color: white;
+    cursor: pointer;
+}
+.c_btns button:hover
+{
+    background-color: rgba(0, 56, 141, 0.563);
 }
 .listbox button
 {
@@ -70,48 +100,12 @@ body
     justify-content: center;
     padding: 5px;
     font-size: 1.1rem;
-    width: fit-content;
+    font-family: 'Nunito', sans-serif;
+    width:100%;
     height: fit-content;
-    background: linear-gradient(rgba(97, 97, 212, 0.848),rgba(50, 50, 124, 0.886));
-    margin-right: 15px;
-}
-.icon-box
-{
-    display: flex;
-    width: fit-content; height: 424px;
-    justify-content: center;
-    align-items: center;
-}
-.icons
-{
-    display: flex;
-    flex-direction: column;
-    row-gap: 15px;
-    height: 300px;
-    justify-content: center; align-items: center;
-    padding: 40px 0px 40px 0px ;
-    column-gap: 10px;
-    overflow-y: scroll; overflow-x: hidden;
-    flex-wrap: nowrap;
-    border-radius: 58px 59px 0px 0px;
-}
-
-.icons::-webkit-scrollbar
-{
-    display: none;
-}
-
-.buttons-group
-{
-    display: flex;
-    flex-direction: column;
-    column-gap: 20px;
-}
-
-.buttons-group 
-{
-    display: flex;
-    column-gap: 10px;
+    background: linear-gradient(rgba(105, 105, 159, 0.848),rgba(110, 110, 169, 0.886));
+    margin-right: 0px;
+    cursor:grab;
 }
 
 .buttons{
@@ -130,14 +124,14 @@ body
     display: flex;
     align-items: center;
     margin: auto; margin-top: 10px;
-    width: 520px;
-    height: 89px;
+    width: 510px;
+    height: 40px;
     flex-shrink: 0;
     border-radius: 0px 0px 14px 14px;
     border: 0px solid #9BBDFF;
-    background: rgba(43, 64, 107,0.95);
-    box-shadow: 0px 0px 33px 3px #312E6F inset, 0px 4px 4px 0px rgba(255, 255, 255, 0.25);
+    background: rgb(39, 39, 116);
     padding: 10px;
+    border: solid 1px rgb(99, 146, 225);
 }
 .inputbox textarea
 {
@@ -164,26 +158,11 @@ body
     height: 30px;
     flex-shrink: 0;
     border-radius: 14px;
-    border: 1px solid #008FF6;
-    background: linear-gradient(180deg, rgba(75, 102, 156, 0.84) 0%, rgba(53, 74, 117, 0.57) 100%);
-    box-shadow: 0px -3px 6px 1px rgba(0, 0, 0, 0.27) inset;
     padding: 20px;
     cursor: pointer;
 }
 .inputbox button:hover
 {
-    box-shadow: 0px 4px 6px 1px rgb(0, 0, 0, 0.27) inset;
-    
+    background-color: #9BBDFF;
+    transition: all ease-in-out 0.2s;
 }
-/* li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-}
-
-li:last-child {
-    border-bottom: none;
-}
- */

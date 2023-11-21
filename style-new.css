@@ -101,7 +101,6 @@
   text-align: left;
 }
 .add-button,
-.home,
 .make-task {
   display: flex;
   align-items: center;
@@ -117,7 +116,7 @@
   height: 40px;
   flex-direction: row;
 }
-.home,
+
 .make-task {
   overflow: hidden;
 }

@@ -5,17 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <section class="header">
+    </section>
     <div class="container">
         <div class="tasklistbox">
             <ul class="tasklist" id="tasklist">
-                
+                <div class="listbox">
+                    <li class="listitem" id="listitem">
+                        <p> Task 1</p>    
+                    </li>
+                    <div class="c_btns" id="c_btns">
+                        <button class="c_btn" id="c_btn" > Done </button>
+                        <button class="d_btn" id="d_btn"> Delete </button>
+                    </div>
+                </div>
             </ul>
         </div>
     </div>
     <div class="inputbox">
-        <textarea class="task-msg" type="text" placeholder="Write Task ..." id="taskinput"></textarea>
+        <textarea class="task-msg" type="text" placeholder="Add Task ..." id="taskinput"></textarea>
         <button id="addtask"> Add </button>
     </div>
 </body>
