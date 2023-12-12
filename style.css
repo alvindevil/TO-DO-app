@@ -11,6 +11,28 @@ body
     background-size: cover;
     width: 100%; height: 100%;
 }
+.header
+{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 50px;
+}
+.header h1
+{
+    display: block;
+    margin: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+.header .profile-icon img
+{
+    width: 50px;
+    background: url("Profile-icon.png"), lightgray 50% / contain no-repeat;
+}
+
+
 .container
 {
     display: flex;
@@ -23,9 +45,8 @@ body
     flex-shrink: 0;
     border-radius: 0px 0px 0px 0px;
     border: 2px solid #AEC9FD;
-    background: rgba(23, 63, 144, 0.303);
+    background: rgb(57, 70, 132);
     backdrop-filter: blur(10px);
-    box-shadow: 0px 0px 190px 3px rgba(156, 139, 240, 0.556) inset, 0px 0px 13px 1px rgba(255, 255, 255, 0.25);
     padding-bottom: 10px;
 }
 
@@ -34,9 +55,8 @@ body
     display: flex;
     justify-content: center; align-items: center;
     align-self: center;
-    width: 90%;
+    width: 500px;
     height: 90%;
-    
     flex-shrink: 0;
     overflow: hidden;
 }
@@ -52,7 +72,19 @@ body
 }
 .tasklist::-webkit-scrollbar
 {
-    display: none;
+    width: 7px;
+}
+.tasklist::-webkit-scrollbar-thumb
+{
+    background-color: rgba(39, 39, 179, 0.448);
+}
+.tasklist::-webkit-scrollbar-thumb:hover
+{
+    background-color: rgba(39, 39, 179, 0.963);
+}
+.tasklist::-webkit-scrollbar-track
+{
+    background: rgb(255, 255, 255);
 }
 .listbox
 {
@@ -91,8 +123,7 @@ body
 {
     display: block;
     text-align: center;
-    padding: 5px 10px;
-    border: solid 1px grey;
+    padding: 8px 15px;
 }
 .tasklist li
 {
@@ -108,16 +139,6 @@ body
     cursor:grab;
 }
 
-.buttons{
-    display: flex;
-}
-.buttons button
-{
-    display: block;
-    text-align: center;
-    padding: 10px 15px;
-    border: solid 1px grey;
-}
 
 .inputbox
 {

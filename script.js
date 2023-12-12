@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
       c_btn.addEventListener("click", () => {
         if (is_checked == false) {
           listitem.style.textDecoration = "line-through";
-          listitem.style.color ="black";
+          listitem.style.color ="white";
           is_checked = true;
         } else {
             listitem.style.textDecoration = "initial";
